@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table-methods</title>
+    <script defer="true" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main_div">
+    <div>
+        <table>
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="align_1">
+        <label>Id : </label>
+        <input id="id_input" type="number" placeholder="Enter new Id">
+
+        <label>Name : </label>
+        <input id="name_input" type="text" placeholder="Enter new name">
+
+        <label>Place : </label>
+        <input id="place_input" type="text" placeholder="Enter new place">
+
+        <button id="insert_table" type="button" onclick="insertRows()">Add</button>
+    </div>
+
+    <div id="align_1">
+        <label>Enter ID : </label>
+        <input id="delete_input" type="text" placeholder="Enter ID for Delete">
+        <button id="delete_table" type="button" onclick="deleteRows()">Delete</button>
+    </div>
+</div>
+</body>
+
+</html>

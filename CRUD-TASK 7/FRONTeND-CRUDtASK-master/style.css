@@ -1,0 +1,275 @@
+* {
+    margin: 0 auto;
+}
+
+form{
+    padding-bottom: 30px;
+}
+
+#clear{
+    padding:10px;
+    background-color: rgba(223, 231, 228, 0.662);
+    border: none;
+    align-items: right;
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    float: right;
+    margin-top: -35px;
+}
+
+#clear:hover{
+    background-color: #8ae7cc;
+    color:black;
+}
+
+body {
+    width: 75%;
+    background-image: url("./images/education1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.section_background {
+    background-color: azure;
+    box-shadow: rgba(0, 13, 8, 4.1) 2px 1px 10px;
+    padding-bottom: 20px;
+}
+
+
+.flex_1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.flex_2 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.flex_3 {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.flex_8 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.flex_9 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.flex_mark {
+    display:flex;
+    margin-bottom: 50px;
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+input {
+    border: 0px;
+    background-color: none;
+    color: none;
+    outline: none;
+    background-color: azure;
+    border: none;
+    fill: none;
+    background: transparent;
+}
+
+header {
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: #0071bc;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+h1 {
+    text-shadow: 0px 10px 15px 0px black;
+}
+
+select {
+    border: none;
+    background-color: azure;
+    outline: none;
+}
+
+legend {
+    margin-left: 5px;
+    font-weight: 500;
+    color:#0071bc
+}
+
+fieldset {
+    width:35%;
+    border-radius: 5px;
+    border-color: rgb(38, 84, 203);
+}
+
+.flex_mark fieldset{
+    width:2px;
+}
+
+.total {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px;
+    width: 15%;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+}
+
+.reset_button {
+    border: none;
+    box-shadow: 0px 5px 5px 0px #f6cccc;
+    margin-left: 63px;
+    background-color: #0071bc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.submit_button {
+    border: none;
+    box-shadow: 0px 5px 5px 0px #8ae7cc;
+    margin-left: 250px;
+    margin-bottom: 90px;
+    background-color: #0071bc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.update_button{
+    border: none;
+    box-shadow: 0px 5px 5px 0px #f6ecbc;
+    margin-left: 240px;
+    margin-bottom: 90px;
+    background-color: #0071bc;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.calculation_fieldset {
+    width: 85%;
+    margin-bottom: 100px;
+    padding-top: 35px;
+
+}
+
+.calculations {
+    color: black;
+}
+
+.calculate_button {
+    margin-bottom: 25px;
+    margin-left: 420px;
+    width: 25%;
+    border-style: outset;
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(255, 68, 0, 0.785);
+}
+
+table th {
+    height: 30px;
+    margin-top: 90px;
+    color: #0071bc;
+    padding: 15px;
+    border-color: blue;
+}
+
+table {
+    text-align: center;
+    width: 90%;
+}
+
+ #add {
+    width: 20%;
+    color: #0071bc;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #d1e5f7;
+    border-style: outset;
+    font-weight: 700;
+    margin-left: 25%;
+    align-items: center;
+    text-align: center;
+    margin-left: 39%;
+    font-size: large;
+    border: none;
+    border-style:none;
+    padding: 10px;
+}
+
+#add:hover {
+    background-color: #8ae7cc;
+}
+
+td {
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #d1e5f7;
+}
+
+tr:nth-child(even) {
+    background-color: #d1e5f7;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#actionButton{
+    border: none;
+    padding: 12px;
+    width: 30%;
+    background-color: none;
+    border-style:outset;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+#actionButton:hover,
+#actionButton:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  background-color: #99d1f7;
+}
+
+#align {
+    display: block;
+    font-style: italic;
+}

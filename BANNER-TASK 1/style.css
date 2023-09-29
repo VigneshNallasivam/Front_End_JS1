@@ -1,0 +1,78 @@
+
+/* *{
+  margin: 0;
+} */
+.header{
+    padding: 33px;
+    text-align:right;
+    background: #1abc9c;
+    font-size: 60px;
+  }
+
+  video{
+    display: flex;
+    align-items:end;
+    float: right;
+  }
+  .aside1 {
+    margin-left:69%;
+  }
+  .aside2 {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
+
+  img{
+    /* background-repeat:space; */
+    /* object-fit:fill; */
+    height: 250px;
+    width:100%;
+    /* image-rendering: pixelated;  */
+    /* object-fit:contain; */
+    /* object-position:50% 50%; */
+    /* background-image: url(school.jpg);
+    background-repeat: repeat-x; */
+    /* background-repeat: repeat-x; */
+    }
+
+  h1{
+    font-size: 18px;
+    color: red;
+  }
+
+  table, th, td {
+    border:1px solid black;
+    border-color: brown;
+    border-style:double; 
+    text-align: center;
+    border-collapse:collapse;
+  }
+  .footer
+  {
+        padding: 15px;
+        text-align: center;
+        background: #1abc9c;
+        color:crimson;
+        font-size: 15px;
+        text-align:right;
+  }
+  .vertical1{
+    writing-mode: vertical-lr;
+    color:brown;
+    text-align: center;
+  }
+  .vertical2{
+    writing-mode: vertical-lr;
+    color:red;
+    text-align: center;
+  }
+  .button1{
+    margin-right:67%;
+    font-family: cursive;
+    display: inline-block;
+    background-color: darkolivegreen;
+  }

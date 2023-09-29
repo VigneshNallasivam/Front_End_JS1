@@ -1,0 +1,54 @@
+table,th,td{
+    border-collapse: collapse;
+    border: solid 2px #cccc;
+    padding: 10px;
+}
+
+th{
+    background-color: #F0F0F0;
+}
+
+table{
+    width:500px;
+    table-layout:fixed;
+    text-align: center;
+}
+
+#align_1{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px
+}
+
+input{
+    width:70%;
+    padding:10px
+}
+
+#insert_table{
+    width:83%;
+    margin-top:8px;
+    padding:10px
+}
+
+#insert_table:hover{
+    cursor: pointer;
+}
+
+#delete_table:hover{
+    cursor:grab
+}
+
+
+#delete_table{
+    width:83%;
+    margin-top:8px;
+    padding:10px
+}
+
+#main_div{
+    display:flex;
+    justify-content:space-around;
+    margin-top:150px
+}
+

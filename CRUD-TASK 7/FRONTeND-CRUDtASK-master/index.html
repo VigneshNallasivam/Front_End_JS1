@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation-Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer="true" src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/0bb5a57a77.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="section_background">
+        <header>
+            <h1>Student Form</h1>
+            <button type="button" id="clear" onclick="clearFormAfterSubmitOrUpdate()"><i
+                    class="fa-solid fa-plus"></i></button>
+        </header>
+        <form>
+            <div class="flex_1">
+                <fieldset>
+                    <legend>Name <span style="color: red;">*</span></legend>
+                    <input type="text" id="name" name="name">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Register No<span style="color: red;">*</span></legend>
+                    <input type="text" id="register" name="register">
+                </fieldset>
+            </div>
+
+            <div class="flex_2">
+                <fieldset>
+                    <legend>Standard</legend>
+                    <select name="standard" onchange="selected_standard()" id="standard">
+                        <option value="none" selected disabled hidden>Select Standard</option>
+                        <option value="1">1st Standard</option>
+                        <option value="2">2nd Standard</option>
+                        <option value="3">3rd Standard</option>
+                        <option value="4">4th Standard</option>
+                        <option value="5">5th Standard</option>
+                        <option value="6">6th Standard</option>
+                        <option value="7">7th Standard</option>
+                        <option value="8">8th Standard</option>
+                        <option value="9">9th Standard</option>
+                        <option value="10">10th Standard</option>
+                        <option value="11">11th Standard</option>
+                        <option value="12">12th Standard</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Section</legend>
+                    <select name="section" onchange="selected_section()" id="section">
+                        <option value="none" selected disabled hidden>Select Section</option>
+                        <option>A-Section</option>
+                        <option>B-Section</option>
+                        <option>C-Section</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <div class="flex_3">
+                <fieldset>
+                    <legend>Email <span style="color: red;">*</span></legend>
+                    <input type="email submit" pattern="[a-z0-9]+[@][a-z]+[.][a-z]+" id="email" name="email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mobile Number <span style="color: red;">*</span></legend>
+                    <input type="text submit" pattern="[789][0-9]{9}" id="mobile" name="mobile">
+                </fieldset>
+            </div>
+
+            <div class="flex_mark">
+                <fieldset>
+                    <legend>English</legend>
+                    <input type="number" id="english" name="english">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tamil</legend>
+                    <input type="number" id="tamil" name="tamil">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Maths</legend>
+                    <input type="number" id="maths" step="0.1" name="maths">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Science</legend>
+                    <input type="number" id="science" step="0.01" name="science">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Social</legend>
+                    <input type="number" id="social" name="social">
+                </fieldset>
+            </div>
+
+            <button class="calculate_button disabled" id="calculate" type="button"
+                onclick="myCalculation()">CALCULATE</button>
+
+            <fieldset class="calculation_fieldset">
+                <legend class="calculations">CALCULATIONS <span style="color: red;">*</span></legend>
+                <div class="flex_8">
+                    <fieldset>
+                        <legend>Total</legend>
+                        <input type="text" id="total_mark" name="total" disabled>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Average</legend>
+                        <input type="text" id="avg_mark" name="Average" disabled>
+                    </fieldset>
+                </div>
+
+                <div class="flex_9">
+                    <fieldset>
+                        <legend>Grade</legend>
+                        <input type="text" id="grade" name="total" disabled>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Result</legend>
+                        <input type="text" id="result" name="result" disabled>
+                    </fieldset>
+                </div>
+            </fieldset>
+            <button class="reset_button" type="reset">Reset</button>
+            <button class="update_button" type="button" onclick="updateTable()">Update</button>
+            <button class="submit_button" type="button" onclick="addData()">Submit</button>
+            <hr id="line">
+            <div>
+                <button type="button" id="add"><i class="fa-solid fa-user-plus fa-xl"
+                        style="color: #13397c;"></i></button>
+            </div>
+            <table id="tableData">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </form>
+    </section>
+</body>
+</html>
